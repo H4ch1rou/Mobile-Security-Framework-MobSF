@@ -83,6 +83,7 @@ class StaticAnalyzerAndroid(models.Model):
     NETWORK_SECURITY = models.TextField(default=[])
     SECRETS = models.TextField(default=[])
     SBOM = models.TextField(default={})
+    IA_MALWARE_PERCENTAGE = models.TextField(default=[])
 
 
 class StaticAnalyzerIOS(models.Model):
@@ -183,3 +184,4 @@ class EnqueuedTask(models.Model):
 
     def __str__(self):
         return f'{self.name} ({self.status})'
+
