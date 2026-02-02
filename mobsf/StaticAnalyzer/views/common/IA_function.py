@@ -25,7 +25,7 @@ def validate_malware_ia(data):
     print("[*]Permisos listado pre IA" )
     print(permission)
 
-    model_path = "mobsf\\StaticAnalyzer\\tools\\IA_model\\train_model_permisisions"
+    model_path = "mobsf\\StaticAnalyzer\\tools\\IA_model\\NyerAndroidMalware"
 
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
     tokenizer = AutoTokenizer.from_pretrained(model_path)
